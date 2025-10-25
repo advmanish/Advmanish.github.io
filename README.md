@@ -1,7 +1,9 @@
 # Advmanish.github.io
 # Advocate Manish Sharma
 
-![Manish Sharma](your-image-file.jpg)  <!-- Replace 'your-image-file.jpg' with your image file name -->
+![Manish Sharma](<a href="Manish%20Sharma.jpg">
+  <img src="Manish%20Sharma.jpg" width="220" style="border-radius:50%">
+</a>.jpg)  <!-- Replace 'your-image-file.jpg' with your image file name -->
 
 **BBA, LL.B., LL.M.**  
 Advocate at Nathdwara, Rajasthan
