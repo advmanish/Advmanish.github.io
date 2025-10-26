@@ -19,50 +19,73 @@
       margin: auto;
       padding: 20px;
     }
+
+    /* Profile image */
     img.profile {
-  width: 280px;                     /* larger width */
-  height: 280px;                    /* set height to keep square shape */
-  border-radius: 20px;              /* rounded corners */
-  border: 4px solid #28B463;       /* new border color and thickness */
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3); /* shadow for 3D effect */
-  margin-bottom: 20px;
-}
+      width: 280px;
+      height: 280px;
+      border-radius: 20px; 
+      border: 4px solid #28B463;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
     }
+
+    h1 {
+      color: #2E86C1;
+      font-size: 48px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Qualification below name */
+    .qualification {
+      font-size: 24px;
+      color: #F39C12;
+      margin-top: 0;
+      margin-bottom: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    /* Boxes styling */
     .box {
-      border-radius: 12px;
-      padding: 25px;
-      margin: 20px 0;
+      border-radius: 20px;
+      padding: 40px;
+      margin: 30px 0;
       text-align: left;
+      font-size: 24px; /* larger text */
     }
     .contact { background-color: #D6EAF8; border: 2px solid #2E86C1; }
-    .social { background-color: #D5F5E3; border: 2px solid #28B463; text-align: center; }
     .about { background-color: #FCF3CF; border: 2px solid #F39C12; }
-    a { color: #2E86C1; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    /* Updated social links styling */
+    
+    /* Social links */
+    .social { background-color: #D5F5E3; border: 2px solid #28B463; text-align: center; }
     .social a { 
-      margin: 15px 0;               /* space between each link */
-      font-size: 60px;              /* double icon size */
-      display: flex;                /* align icon + text */
-      align-items: center;          /* vertical alignment */
-      justify-content: center;      /* center horizontally */
-      padding: 15px; 
-      border-radius: 12px; 
-      background-color: #e0f7e9; 
+      margin: 20px 0;
+      font-size: 60px; /* double icon size */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: #e0f7e9;
       text-decoration: none;
     }
-    .social a i { 
-      margin-right: 15px;           /* space between icon and text */
-    }
+    .social a i { margin-right: 15px; }
 
+    /* QR code */
     .qr img { width: 150px; border-radius: 10px; margin-top: 10px; }
+
+    /* Link hover */
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="manish sharma.jpg" alt="Manish Sharma" class="profile">
     <h1>ADVOCATE MANISH SHARMA</h1>
+    <p class="qualification">BBA, LL.B., LL.M.</p>
 
     <div class="box contact">
       <h2>Contact</h2>
