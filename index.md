@@ -1,42 +1,32 @@
-# Advmanish.github.io
-# Advocate Manish Sharma
-
-![Manish Sharma](<<a href="manish sharma.jpg">
+<p style="text-align:center;">
   <img src="manish sharma.jpg" width="220" style="border-radius:50%">
-</a>)  <!-- Replace 'your-image-file.jpg' with your image file name -->
+</p>
 
-**BBA, LL.B., LL.M.**  
-Advocate at Nathdwara, Rajasthan
+<h1 style="text-align:center; color:#2E86C1; font-size:48px; text-transform:uppercase; font-weight:bold;">
+  ADVOCATE MANISH SHARMA
+</h1>
 
----
+<div style="border:2px solid #2E86C1; border-radius:12px; padding:15px; margin:20px; background-color:#D6EAF8;">
+  <h2 style="color:#1B4F72;">CONTACT</h2>
+  <p>
+    Address: A-16 Housing Board, Telion ka Talab, Nathdwara, Rajasthan 313301<br>
+    Phone: 7976435064
+  </p>
+</div>
 
-## Contact Information
+<div style="border:2px solid #28B463; border-radius:12px; padding:15px; margin:20px; background-color:#D5F5E3;">
+  <h2 style="color:#1D8348;">SOCIAL LINKS</h2>
+  <p>
+    <a href="https://youtube.com/@shrinathlawacademy" target="_blank">📺 YouTube</a> | 
+    <a href="https://www.facebook.com/profile.php?id=100002438078917" target="_blank">📘 Facebook</a> | 
+    <a href="https://www.instagram.com/" target="_blank">📸 Instagram</a> | 
+    <a href="https://www.linkedin.com/in/manish-sharma-74b663390" target="_blank">💼 LinkedIn</a>
+  </p>
+</div>
 
-- **Address:** A-16 Housing Board, Telion ka Talab, Nathdwara, District Rajsamand, Rajasthan, 313301  
-- **Phone:** 7976435064  
-- **Email:** [Add your email here]  
-
----
-
-## Connect with Me
-
-- **YouTube:** [Shrinath Law Academy](https://youtube.com/@shrinathlawacademy?si=oYUHBS8rqcHOvq2M)  
-- **Facebook:** [Manish Sharma](https://www.facebook.com/profile.php?id=100002438078917)  
-- **Instagram:** [Manish Sharma](https://www.facebook.com/profile.php?id=100002438078917)  
-- **LinkedIn:** [Manish Sharma](https://www.linkedin.com/in/manish-sharma-74b663390?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
-
----
-
-## About Me
-
-I am Advocate Manish Sharma, practicing law in Nathdwara, Rajasthan. I specialize in legal advisory, litigation, and providing guidance to law students through online platforms.  
-
----
-
-## How to Add Your Picture
-
-1. Save your image in your repository (GitHub repo) in the main folder.  
-2. Replace `your-image-file.jpg` in the `README.md` with your actual image file name.  
-3. Commit and push the changes. Your picture will appear at the top of your GitHub page.
-
----
+<div style="border:2px solid #F39C12; border-radius:12px; padding:15px; margin:20px; background-color:#FCF3CF;">
+  <h2 style="color:#B9770E;">ABOUT</h2>
+  <p>
+    Advocate Manish Sharma (BBA, LL.B., LL.M.) practicing law in Rajasthan.
+  </p>
+</div>
