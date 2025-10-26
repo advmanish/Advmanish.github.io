@@ -30,12 +30,27 @@
       margin-bottom: 20px;
     }
 
+    /* Header name */
     h1 {
-      color: #2E86C1;
       font-size: 48px;
       text-transform: uppercase;
       font-weight: bold;
       margin-bottom: 10px;
+    }
+
+    /* Advocate line with icon */
+    .advocate-line {
+      color: red;
+    }
+    .advocate-line i {
+      margin-right: 10px;
+    }
+
+    /* Manish Sharma line */
+    .name-line {
+      color: #2E86C1;
+      display: block;
+      margin-top: 5px;
     }
 
     /* Qualification below name */
@@ -51,19 +66,19 @@
     /* Boxes styling */
     .box {
       border-radius: 20px;
-      padding: 40px;
+      padding: 40px;           /* large box */
       margin: 30px 0;
       text-align: left;
-      font-size: 24px; /* larger text */
+      font-size: 24px;         /* larger text */
     }
     .contact { background-color: #D6EAF8; border: 2px solid #2E86C1; }
     .about { background-color: #FCF3CF; border: 2px solid #F39C12; }
-    
+
     /* Social links */
     .social { background-color: #D5F5E3; border: 2px solid #28B463; text-align: center; }
     .social a { 
       margin: 20px 0;
-      font-size: 60px; /* double icon size */
+      font-size: 60px;        /* large icon size */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -77,16 +92,24 @@
     /* QR code */
     .qr img { width: 150px; border-radius: 10px; margin-top: 10px; }
 
-    /* Link hover */
+    /* Hover effect for links */
     a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <div class="container">
     <img src="manish sharma.jpg" alt="Manish Sharma" class="profile">
-    <h1>ADVOCATE<br>MANISH SHARMA</h1>
+
+    <!-- Header with icon -->
+    <h1>
+      <span class="advocate-line"><i class="fas fa-gavel"></i>Advocate</span>
+      <span class="name-line">Manish Sharma</span>
+    </h1>
+
+    <!-- Qualification -->
     <p class="qualification">BBA, LL.B., LL.M.</p>
 
+    <!-- Contact box -->
     <div class="box contact">
       <h2>Contact</h2>
       <p>
@@ -95,6 +118,7 @@
       </p>
     </div>
 
+    <!-- Social links -->
     <div class="box social">
       <h2>Social Links</h2>
       <p><a href="https://wa.me/917976435064" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
@@ -104,6 +128,7 @@
       <p><a href="https://www.linkedin.com/in/manish-sharma-74b663390" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
     </div>
 
+    <!-- About box -->
     <div class="box about">
       <h2>About</h2>
       <p>
@@ -113,6 +138,7 @@
       </p>
     </div>
 
+    <!-- QR Code -->
     <div class="box qr">
       <h2>QR Code / Other Images</h2>
       <img src="qrcode.png" alt="QR Code">
