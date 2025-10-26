@@ -3,139 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advocate Manish Sharma | Legal Consultant</title>
+    <title>Advocate Manish Sharma | Law, Education, Consultancy</title>
+    <!-- Tailwind CSS CDN for utility-first responsive design -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Manish sharma.jpg" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .professional-card-shadow {
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
-            transition: all 0.3s ease;
+        body { font-family: 'Inter', sans-serif; }
+        .premium-shadow {
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 10px 10px -5px rgba(0,0,0,.04);
+            transition: all .3s cubic-bezier(.25,.8,.25,1)
         }
-        .professional-card-shadow:hover {
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
-            transform: translateY(-2px);
+        .premium-shadow:hover {
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+            transform: translateY(-2px)
         }
-        .social-icon { font-size: 1.5rem; transition: transform 0.3s; }
-        .social-icon:hover { transform: scale(1.2); }
+        .icon-link {
+            transition: all .2s;
+        }
+        .icon-link:hover {
+            transform: scale(1.15);
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
-    <!-- Hero Section -->
-    <section class="pt-16 pb-20 bg-white text-center">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-            
-            <!-- Profile Photo -->
-            <div class="w-64 h-64 rounded-full overflow-hidden professional-card-shadow mb-6">
-                <img src="manish sharma.jpg" alt="Advocate Manish Sharma" class="w-full h-full object-cover">
+    <!-- Header/Profile -->
+    <header class="bg-blue-900 text-white shadow-xl sticky top-0 z-50">
+        <div class="max-w-3xl mx-auto flex flex-col items-center py-8">
+            <!-- Profile Image (update path as needed) -->
+            <img src="Manish sharma.jpg" alt="Manish Sharma" class="w-36 h-36 rounded-full object-cover border-4 border-amber-400 premium-shadow mb-4">
+            <div class="text-center">
+                <h2 class="text-lg font-bold">Advocate</h2>
+                <h1 class="text-3xl font-black text-amber-400 tracking-wide">Manish Sharma</h1>
+                <h3 class="text-xl font-semibold mt-1">BBA, LL.B., LL.M.</h3>
             </div>
-
-            <!-- Name & Qualification -->
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-red-600 flex items-center justify-center">
-                <i class="fas fa-gavel mr-2"></i>Advocate
-            </h1>
-            <h2 class="text-4xl sm:text-5xl font-extrabold text-blue-700 mt-2">Manish Sharma</h2>
-            <p class="text-xl text-gray-700 font-semibold mt-1">BBA, LL.B., LL.M.</p>
-
-            <!-- Intro -->
-            <p class="mt-6 text-gray-600 text-lg sm:text-xl max-w-3xl">
-                Practicing law in Rajsamand, Rajasthan since 2009. Experienced in litigation, civil, revenue, and criminal law. Runs YouTube educational channel and provides judiciary coaching.
-            </p>
-
             <!-- Social Media Links -->
-            <div class="mt-6 flex gap-6">
-                <a href="https://wa.me/917976435064" target="_blank" class="text-green-500 social-icon"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.linkedin.com/in/[your-linkedin]" target="_blank" class="text-blue-700 social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/[your-github]" target="_blank" class="text-gray-900 social-icon"><i class="fab fa-github"></i></a>
-                <a href="https://www.youtube.com/[your-youtube]" target="_blank" class="text-red-600 social-icon"><i class="fab fa-youtube"></i></a>
+            <div class="flex space-x-4 mt-5 mb-2">
+                <a href="https://youtube.com/@shrinathlawacademy?si=oYUHBS8rqcHOvq2M" target="_blank" class="icon-link" title="YouTube">
+                  <!-- YouTube SVG -->
+                  <svg class="w-7 h-7 fill-current text-red-500" viewBox="0 0 24 24"><path d="..."/><path d="M15.54,11.7l-4.25-2.45c-0.32-0.18-0.67,..." /></svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100002438078917" target="_blank" class="icon-link" title="Facebook">
+                  <!-- Facebook SVG -->
+                  <svg class="w-7 h-7 fill-current text-blue-500" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C0.592 0 0 0.593 0 1.326v21.348C0 23.407..."/></svg>
+                </a>
+                <a href="https://www.instagram.com/profile.php?id=100002438078917" target="_blank" class="icon-link" title="Instagram">
+                  <!-- Instagram SVG -->
+                  <svg class="w-7 h-7 fill-current text-pink-500" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 ..."/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/manish-sharma-74b663390?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="icon-link" title="LinkedIn">
+                  <!-- LinkedIn SVG -->
+                  <svg class="w-7 h-7 fill-current text-blue-700" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 ..."/></svg>
+                </a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 sm:py-24 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 bg-white p-8 rounded-xl professional-card-shadow">
-            <h2 class="text-base text-blue-600 font-semibold uppercase tracking-wide">About Me</h2>
-            <p class="mt-4 text-3xl font-extrabold text-gray-900">A Decade of Dedicated Legal Practice</p>
-            <p class="mt-4 text-lg text-gray-600">
-                Advocate Manish Sharma has been practicing law since 2009 in Rajasthan, providing expert legal services in civil, criminal, and revenue matters. Experienced in handling bank searches, property disputes, and judiciary coaching.
+    <!-- Main Content Wrapper -->
+    <main class="max-w-4xl mx-auto bg-white rounded-xl premium-shadow p-8 my-6">
+
+        <!-- About Section -->
+        <section id="about" class="mb-10">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">About Me</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+              Advocate Manish Sharma (BBA, LL.B., LL.M.) has been practicing law in Rajsamand district, Rajasthan since 2009.<br>
+              Runs an education and legal awareness YouTube channel.<br>
+              Practiced for a year at Rajasthan High Court, Jodhpur, and served as Panel Advocate at Shrinath Solitaire Pvt. Ltd.<br>
+              Guest faculty at Law College.<br>
+              Specializing in litigation, civil, revenue, and criminal law, and providing advisory services both online and offline.<br>
+              Has handled cases involving bank searches and property disputes, and offers classes for judiciary aspirants.<br>
+              <span class="block mt-3 text-blue-900 font-semibold">Languages: Hindi & English | Available for consultations, teaching, and litigation across Rajasthan courts.</span>
             </p>
-        </div>
-    </section>
+        </section>
 
-    <!-- Expertise Section -->
-    <section id="expertise" class="py-16 sm:py-24 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-base text-blue-600 font-semibold uppercase tracking-wide text-center">Core Practice Areas</h2>
-            <p class="text-3xl font-extrabold text-gray-900 mt-2 text-center mb-10">Solutions Tailored to Your Legal Needs</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div class="p-6 bg-white rounded-xl professional-card-shadow">
-                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-700 mb-4">
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900">Litigation & Arbitration</h3>
-                    <p class="mt-2 text-gray-500 text-base">Representation in civil, criminal, and commercial disputes with arbitration support.</p>
-                </div>
-
-                <div class="p-6 bg-white rounded-xl professional-card-shadow">
-                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-700 mb-4">
-                        <i class="fas fa-gavel"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900">Civil & Revenue Law</h3>
-                    <p class="mt-2 text-gray-500 text-base">Handling property disputes, land revenue cases, and civil litigation professionally.</p>
-                </div>
-
-                <div class="p-6 bg-white rounded-xl professional-card-shadow">
-                    <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-700 mb-4">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900">Judiciary Coaching</h3>
-                    <p class="mt-2 text-gray-500 text-base">Online and offline classes for RJS and CLAT aspirants with practical insights.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 sm:py-24 bg-blue-900 text-white">
-        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
-
-            <!-- Contact Form -->
-            <div class="bg-white text-gray-900 p-8 rounded-xl professional-card-shadow">
-                <h3 class="text-2xl font-bold mb-6">Send an Inquiry</h3>
-                <form action="#" method="POST" class="space-y-4">
-                    <input type="text" name="name" placeholder="Full Name" required class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                    <input type="email" name="email" placeholder="Email Address" required class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                    <textarea name="message" rows="4" placeholder="Describe your requirement" required class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
-                    <button type="submit" class="w-full py-3 px-4 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition">Submit Request</button>
-                </form>
-            </div>
-
-            <!-- Direct Contact Info -->
-            <div class="space-y-6 p-6 bg-blue-800 rounded-xl">
+        <!-- Contact & Address -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Contact Information</h2>
+            <div class="grid md:grid-cols-2 gap-6">
                 <div>
-                    <h3 class="font-bold text-lg">Office Location</h3>
-                    <p>A-16 Housing Board, Telion ka Talab, Nathdwara, Rajasthan 313301</p>
+                    <p class="font-medium mb-1">Office Address:</p>
+                    <p class="text-gray-700">
+                      A-16 Housing board, Telion ka talab,<br>
+                      Nathdwara, District Rajsamand, Rajasthan<br>
+                      Pin code 313301
+                    </p>
                 </div>
                 <div>
-                    <h3 class="font-bold text-lg">Phone</h3>
-                    <p><a href="tel:7976435064" class="hover:text-white">7976435064</a></p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg">Email</h3>
-                    <p><a href="mailto:Advmanish.rajasthan@gmail.com" class="hover:text-white">Advmanish.rajasthan@gmail.com</a></p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-lg">WhatsApp</h3>
-                    <p><a href="https://wa.me/917976435064" target="_blank" class="hover:text-white">Chat on WhatsApp</a></p>
+                    <p class="font-medium mb-1">Phone:</p>
+                    <a class="text-blue-700" href="tel:7976435064">+91-7976435064</a><br>
+                    <p class="font-medium mt-3 mb-1">Email:</p>
+                    <a class="text-blue-700" href="mailto:contact@yourdomain.com">contact@yourdomain.com</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Expertise/Practice Areas -->
+        <section id="expertise" class="mb-10">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Practice Areas</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-4 rounded-lg bg-gray-100 border-t-4 border-blue-800 premium-shadow">
+                    <h3 class="font-bold text-xl mb-2">Litigation (Civil, Revenue, Criminal)</h3>
+                    <p>Comprehensive case preparation, representation in civil, revenue, and criminal courts.</p>
+                </div>
+                <div class="p-4 rounded-lg bg-gray-100 border-t-4 border-blue-800 premium-shadow">
+                    <h3 class="font-bold text-xl mb-2">Property & Bank Related Cases</h3>
+                    <p>Property disputes, bank searches, registration, and document review.</p>
+                </div>
+                <div class="p-4 rounded-lg bg-gray-100 border-t-4 border-blue-800 premium-shadow">
+                    <h3 class="font-bold text-xl mb-2">Legal Education & Judiciary Prep</h3>
+                    <p>Online/offline classes for judiciary aspirants; faculty at law college; YouTube legal education.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="mb-6">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">Contact/Consultation Request</h2>
+            <form action="#" method="POST" class="space-y-4 bg-gray-50 p-6 rounded-lg premium-shadow">
+                <div>
+                    <label for="form_name" class="block font-medium">Full Name</label>
+                    <input type="text" id="form_name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="form_email" class="block font-medium">Email Address</label>
+                    <input type="email" id="form_email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500">
+                </div>
+                <div>
+                    <label for="form_message" class="block font-medium">Your Query</label>
+                    <textarea id="form_message" name="message" rows="3" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                </div>
+                <button type="submit" class="w-full py-2 px-4 rounded-lg font-bold text-white bg-blue-800 hover:bg-amber-400 transition">Send Request</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-gray-200 py-4 text-center">
+        &copy; 2024 Advocate Manish Sharma | Professional Legal & Consultancy Services.
+    </footer>
 
 </body>
 </html>
