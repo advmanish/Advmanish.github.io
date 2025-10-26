@@ -10,7 +10,7 @@
   <h2 style="color:#1B4F72;">CONTACT</h2>
   <p>
     Address: A-16 Housing Board, Telion ka Talab, Nathdwara, Rajasthan 313301<br>
-    Phone: 7976435064
+    Phone: <a href="tel:7976435064" style="color:#2E86C1;">7976435064</a>
   </p>
 </div>
 
@@ -27,6 +27,9 @@
 <div style="border:2px solid #F39C12; border-radius:12px; padding:15px; margin:20px; background-color:#FCF3CF;">
   <h2 style="color:#B9770E;">ABOUT</h2>
   <p>
-    Advocate Manish Sharma (BBA, LL.B., LL.M.) practicing law in Rajasthan.
+    Advocate Manish Sharma (BBA, LL.B., LL.M.) practicing law in Rajsamad district in Rajasthan.<br>
+    Specializes in litigation, civil, revenue and criminal law, and advisory services both online and offline.<br>
+    Passionate about legal education and mentoring aspiring law students.<br>
+    Experienced in handling cases related to bank searches, property disputes, and also provide offline and online guidance to judidiary aspirants.
   </p>
 </div>
