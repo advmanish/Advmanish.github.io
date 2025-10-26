@@ -43,8 +43,23 @@
     .about { background-color: #FCF3CF; border: 2px solid #F39C12; }
     a { color: #2E86C1; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .social a { margin: 15px; font-size: 30px; display: inline-block; vertical-align: middle; padding: 15px; border-radius: 12px; background-color: #e0f7e9; }
-    .social a i { margin-right: 8px; }
+
+    /* Updated social links */
+    .social a { 
+      margin: 15px 0;               /* space between each link */
+      font-size: 60px;              /* double the icon size */
+      display: flex;                /* flex to align icon and text */
+      align-items: center;          /* vertical alignment */
+      justify-content: center;      /* center horizontally */
+      padding: 15px; 
+      border-radius: 12px; 
+      background-color: #e0f7e9; 
+      text-decoration: none;
+    }
+    .social a i { 
+      margin-right: 15px;           /* space between icon and text */
+    }
+
     .qr img { width: 150px; border-radius: 10px; margin-top: 10px; }
   </style>
 </head>
@@ -63,12 +78,10 @@
 
     <div class="box social">
       <h2>Social Links</h2>
-      <p>
-        <a href="https://youtube.com/@shrinathlawacademy" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-        <a href="https://www.facebook.com/profile.php?id=100002438078917" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="https://www.linkedin.com/in/manish-sharma-74b663390" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      </p>
+      <p><a href="https://youtube.com/@shrinathlawacademy" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></p>
+      <p><a href="https://www.facebook.com/profile.php?id=100002438078917" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
+      <p><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
+      <p><a href="https://www.linkedin.com/in/manish-sharma-74b663390" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
     </div>
 
     <div class="box about">
@@ -82,7 +95,6 @@
 
     <div class="box qr">
       <h2>QR Code / Other Images</h2>
-      <!-- Replace 'qrcode.png' with your QR code file -->
       <img src="qrcode.png" alt="QR Code">
     </div>
   </div>
