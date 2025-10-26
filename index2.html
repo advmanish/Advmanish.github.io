@@ -52,7 +52,6 @@
       <a href="#about" class="hover:underline">About</a>
       <a href="#expertise" class="hover:underline">Expertise</a>
       <a href="#contact" class="hover:underline">Contact</a>
-      <!-- ✅ Updated WhatsApp link here -->
       <a href="https://wa.me/917976435064" target="_blank" rel="noopener" class="bg-amber-400 text-blue-900 font-bold px-4 py-2 rounded-full hover:bg-amber-300 transition">Consult Now</a>
     </nav>
   </div>
@@ -73,7 +72,7 @@
         <h3 class="text-xl font-semibold mb-2">Profile</h3>
         <ul class="list-disc pl-5 text-gray-700 space-y-2">
           <li>Location: Nathdwara, Rajsamand, Rajasthan</li>
-          <li>Phone: +91 79764 35064</li>
+          <li>Phone: <a href="tel:+917976435064" class="text-blue-700 hover:underline">+91 79764 35064</a></li>
           <li>Practice Areas: Litigation, Civil, Revenue, Criminal</li>
           <li>Online & Offline Classes for Judiciary Aspirants</li>
         </ul>
@@ -120,51 +119,26 @@
 </section>
 
 <section id="contact" class="py-16 bg-white">
-  <div class="max-w-7xl mx-auto px-4 lg:px-8">
-    <div class="text-center mb-12">
-      <span class="text-amber-600 uppercase text-sm font-semibold tracking-wide">Initiate Contact</span>
-      <h2 class="text-3xl font-extrabold text-gray-900 mt-2">Get In Touch for Expert Advice</h2>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-      <div class="bg-gray-100 p-8 rounded-xl premium-shadow">
-        <h3 class="text-2xl font-bold mb-6 text-gray-800">Send a Confidential Inquiry</h3>
-        <form id="contact-form" action="#" method="POST" class="space-y-6">
-          <div>
-            <label for="form_name" class="block text-sm font-medium text-gray-700">Full Name</label>
-            <input type="text" id="form_name" name="name" required
-                   class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
-          </div>
-          <div>
-            <label for="form_email" class="block text-sm font-medium text-gray-700">Email Address</label>
-            <input type="email" id="form_email" name="email" required
-                   class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
-          </div>
-          <div>
-            <label for="form_message" class="block text-sm font-medium text-gray-700">Briefly state your concern</label>
-            <textarea id="form_message" name="message" rows="4" required
-                      class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-          </div>
-          <button type="submit"
-                  class="w-full py-3 px-4 bg-amber-400 hover:bg-amber-300 text-blue-900 font-bold rounded-lg shadow-md transition duration-300">
-            Send Request
-          </button>
-          <div id="form-message" class="text-center font-medium hidden"></div>
-        </form>
+  <div class="max-w-7xl mx-auto px-4 lg:px-8 text-center">
+    <span class="text-amber-600 uppercase text-sm font-semibold tracking-wide">Initiate Contact</span>
+    <h2 class="text-3xl font-extrabold text-gray-900 mt-2 mb-8">Get In Touch for Expert Advice</h2>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLScagnVDJGuxHQy7FNhovcizveEdcVvPZz90m6kBPqQIjVTxFw/viewform?usp=publish-editor" target="_blank" rel="noopener"
+       class="inline-block py-3 px-8 bg-amber-400 hover:bg-amber-300 text-blue-900 font-bold rounded-lg shadow-md transition duration-300">
+      Send Direct Message
+    </a>
+    <div class="mt-12 bg-blue-800 text-white rounded-xl p-8 premium-shadow space-y-6 max-w-3xl mx-auto">
+      <h3 class="text-2xl font-bold text-amber-400">Direct Contact Information</h3>
+      <div>
+        <p class="text-lg font-medium flex items-center justify-center"><span class="mr-3">📍</span> Office Location</p>
+        <p class="mt-2 text-blue-200">A-16 Housing board, Telion ka talab, Nathdwara, Rajsamand, Rajasthan, 313301</p>
       </div>
-      <div class="bg-blue-800 text-white rounded-xl p-8 premium-shadow space-y-6">
-        <h3 class="text-2xl font-bold text-amber-400">Direct Contact Information</h3>
-        <div>
-          <p class="text-lg font-medium flex items-center"><span class="mr-3">📍</span> Office Location</p>
-          <p class="mt-2 text-blue-200 pl-9">A-16 Housing board, Telion ka talab, Nathdwara, Rajsamand, Rajasthan, 313301</p>
-        </div>
-        <div>
-          <p class="text-lg font-medium flex items-center"><span class="mr-3">✉️</span> Email</p>
-          <p class="mt-2 text-blue-200 pl-9"><a href="mailto:advmanish.rajasthan@gmail.com" class="hover:text-white">advmanish.rajasthan@gmail.com</a></p>
-        </div>
-        <div>
-          <p class="text-lg font-medium flex items-center"><span class="mr-3">📞</span> Phone</p>
-          <p class="mt-2 text-blue-200 pl-9"><a href="tel:+917976435064" class="hover:text-white">+91 79764 35064</a></p>
-        </div>
+      <div>
+        <p class="text-lg font-medium flex items-center justify-center"><span class="mr-3">✉️</span> Email</p>
+        <p class="mt-2 text-blue-200"><a href="mailto:advmanish.rajasthan@gmail.com" class="hover:text-white">advmanish.rajasthan@gmail.com</a></p>
+      </div>
+      <div>
+        <p class="text-lg font-medium flex items-center justify-center"><span class="mr-3">📞</span> Phone</p>
+        <p class="mt-2 text-blue-200"><a href="tel:+917976435064" class="hover:text-white">+91 79764 35064</a></p>
       </div>
     </div>
   </div>
@@ -177,24 +151,6 @@
     <p class="text-center">&copy; 2025 Adv. Manish Sharma. All rights reserved. Legal & Consultancy Services.</p>
   </div>
 </footer>
-
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const btn = this.querySelector('button[type="submit"]');
-    const msg = document.getElementById('form-message');
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = 'Send Request';
-      btn.disabled = false;
-      msg.textContent = 'Thank you. Your inquiry has been noted. We will contact you shortly.';
-      msg.className = 'mt-4 text-center font-medium text-green-600';
-      msg.classList.remove('hidden');
-      this.reset();
-    }, 800);
-  });
-</script>
 
 </body>
 </html>
