@@ -1,164 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Advocate Manish Sharma | Law, Consultancy & Dispute Resolution</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advocate Manish Sharma - Legal & Consultancy Services</title>
+  <!-- Load Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Set Inter as the default font -->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-    /* Dynamic Gradient Theme Variables (Deep Slate, Violet-Cyan Gradient) */
     :root {
-      --bg-dark: #0F172A; /* Deep Slate 900 */
-      --card-bg: #1E293B; /* Slate 800 */
-      --text-primary: #F1F5F9; /* Light Text */
-      --text-secondary: #94A3B8; /* Faded Text */
-      --cta-color: #10B981; /* Emerald Green for CTAs */
+      /* Color Palette */
+      --cta-color: #3b82f6;
+      /* Blue */
+      --text-secondary: #a3a3a3;
+      /* Gray for secondary text */
+      /* Dark Backgrounds (adjusted for transparency over image) */
+      --bg-dark-overlay: rgba(7, 14, 23, 0.9);
+      /* Opaque dark for sections */
+      --card-bg-overlay: rgba(16, 25, 37, 0.95);
+      /* Opaque card background for sections */
     }
 
-    html, body {
-      height: 100%;
-      scroll-behavior: smooth;
-    }
     body {
       font-family: 'Inter', sans-serif;
-      background-color: var(--bg-dark);
-      color: var(--text-primary);
+      /* --- Change 1: Set Background Image --- */
+      background-image: url('background advmanish.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center center;
+      background-color: #000;
+      /* Fallback black */
     }
 
-    /* --- Gradient & Visual Effects --- */
-    .brand-gradient-bg {
-      background: linear-gradient(135deg, #4c44e0 0%, #17b6d1 100%); /* Violet to Cyan */
+    /* Apply new overlay colors to sections */
+    #about {
+      background-color: var(--card-bg-overlay);
     }
+    #expertise {
+      background-color: var(--bg-dark-overlay);
+    }
+    #contact {
+      background-color: var(--card-bg-overlay);
+    }
+
+    /* Custom Gradient Background for CTA elements */
+    .brand-gradient-bg {
+      background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+    }
+
+    /* Custom Gradient Text for titles */
     .brand-gradient-text {
-      background: linear-gradient(135deg, #4c44e0 0%, #17b6d1 100%);
+      background: linear-gradient(45deg, #3b82f6, #60a5fa);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-clip: text;
     }
-
-    /* --- Parallax Hero Section (Uses original image for background depth) --- */
-    #hero-section {
-      background-image: url('manish%20sharma.jpg');
-      background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
-      height: 75vh;
-      min-height: 550px;
-      position: relative;
-    }
-
-    /* Dark Overlay for contrast */
-    #hero-section::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(15, 23, 42, 0.7); /* Deep slate transparent overlay */
-      backdrop-filter: blur(2px);
-    }
-
-    /* --- Dynamic Sticky Header Styles --- */
-    #main-header {
-      transition: all 0.3s ease-in-out;
-      background-color: transparent;
-      box-shadow: none;
-    }
-
-    /* JavaScript will add this class when scrolled */
+    
+    /* Header Scrolled State */
     .header-scrolled {
-      background-color: var(--card-bg) !important;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-      padding-top: 0.75rem !important;
-      padding-bottom: 0.75rem !important;
+      background-color: rgba(7, 14, 23, 0.95); /* Semi-transparent dark background */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
     }
 
-    /* Adjusted to 6rem x 6rem as requested (double the previous size) */
-    .header-scrolled .profile-img-header {
-      width: 6rem;
-      height: 6rem;
-      opacity: 1;
-      margin-right: 1rem;
-      border-radius: 0.5rem; /* Match square look */
+    /* Navigation link styling */
+    .nav-link {
+      color: white;
+      transition: color 0.3s;
     }
 
-    /* Hide the small profile image by default, only show on scroll */
-    .profile-img-header {
-        opacity: 0;
-        width: 0;
-        height: 0;
-        margin-right: 0;
-        transition: all 0.3s ease-in-out;
+    .nav-link:hover {
+      color: var(--cta-color);
     }
 
-    /* Ensure mobile nav links wrap correctly and are spaced out */
-    .mobile-nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem 1rem;
-    }
-
-    /* --- Premium/Dynamic Shadows & Hover Effects --- */
+    /* Premium Shadow for depth */
     .premium-shadow {
-      box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.3);
-      transition: all 0.4s cubic-bezier(.25,.8,.25,1);
-      border-radius: 0.75rem;
-      border: 1px solid #334155;
-    }
-    .premium-shadow:hover {
-      box-shadow: 0 25px 40px -12px rgba(23, 182, 209, 0.3);
-      transform: translateY(-5px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
 
-    /* --- Scroll Reveal Animation --- */
+    /* Scroll Reveal Animation */
     .reveal-item {
       opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-      will-change: opacity, transform;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
     }
+
     .reveal-item.is-visible {
       opacity: 1;
       transform: translateY(0);
     }
   </style>
 </head>
-<body>
-  <div id="hero-section">
-    <header id="main-header" class="fixed top-0 z-50 w-full transition-all duration-300 py-4">
-      <div class="max-w-7xl mx-auto px-4 flex flex-col items-center gap-2 md:flex-row md:justify-between">
-        <div class="flex items-center justify-center md:justify-start w-full md:w-auto">
-          <img src="manish%20sharma.jpg" alt="Manish Sharma Profile"
-               class="profile-img-header object-cover rounded-lg border-2 border-[var(--cta-color)]" />
 
-          <div class="text-center md:text-left text-white drop-shadow-lg">
-            <!-- Font size of "Advocate" and "Manish Sharma" increased by 50% -->
-            <div class="text-[31.5px] md:text-[36px] font-black tracking-tight leading-none">Advocate</div>
-            <div class="text-[31.5px] md:text-[36px] font-black tracking-tight leading-none">Manish Sharma</div>
-            <!-- Font size of "BBA, Ll.B., Ll.M." increased by 50% -->
-            <div class="text-[21px] text-gray-400">BBA, Ll.B., Ll.M.</div>
-          </div>
-          </div>
+<body class="text-white min-h-screen">
 
-        <!-- Navigation link font size increased by 33% -->
-        <nav class="mobile-nav-links text-white text-[18.66px] mt-2 md:mt-0">
-          <a href="#about" class="px-3 py-1 hover:text-[var(--cta-color)] transition font-semibold rounded-lg">About</a>
-          <a href="#expertise" class="px-3 py-1 hover:text-[var(--cta-color)] transition font-semibold rounded-lg">Expertise</a>
-          <a href="#contact" class="px-3 py-1 hover:text-[var(--cta-color)] transition font-semibold rounded-lg">Contact</a>
-          <a href="https://wa.me/917976435064" target="_blank" rel="noopener"
-             class="bg-[var(--cta-color)] text-[var(--bg-dark)] font-bold px-4 py-2 rounded-full hover:bg-emerald-300 transition shadow-lg">
-            Consult Now
-          </a>
-        </nav>
+  <!-- Header and Navigation (Reconstructed) -->
+  <header id="main-header" class="fixed top-0 left-0 w-full z-30 transition-all duration-300 ease-in-out">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 flex justify-between items-center h-20">
+      <div class="flex items-center space-x-4">
+        <!-- Profile image in header for scrolled state (initially hidden) -->
+        <img src="manish%20sharma.jpg" alt="Manish Sharma Profile"
+             class="profile-img-header w-0 h-0 object-cover rounded-full border-4 border-white ring-2 ring-[var(--cta-color)] transition-all duration-300"
+             style="opacity: 0;">
+        <h1 class="text-2xl font-black text-white">Adv. Manish Sharma</h1>
+      </div>
+      
+      <!-- Desktop Navigation (Change 2: Added Social Link) -->
+      <nav class="hidden md:flex space-x-8 text-lg font-semibold">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#social-presence-section" class="nav-link">Social</a>
+        <a href="#expertise" class="nav-link">Expertise</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <a href="https://wa.me/917976435064" target="_blank" class="hidden md:inline-block py-2 px-6 brand-gradient-bg text-white font-bold rounded-lg shadow-md transition duration-300 hover:opacity-90 transform">Consult Now</a>
+        <a href="tel:+917976435064" class="md:hidden text-2xl text-[var(--cta-color)]">📞</a>
+        <a href="#contact" class="md:hidden text-lg text-white font-semibold ml-4">Consult</a>
+        <button id="menu-toggle" class="md:hidden text-white text-3xl ml-4">☰</button>
       </div>
 
-    </header>
+    </div>
+
+    <!-- Mobile Menu (Reconstructed) -->
+    <div id="mobile-menu" class="fixed inset-x-0 top-20 bg-[var(--bg-dark-overlay)] shadow-xl z-50 transform transition-transform duration-300 ease-in-out -translate-y-full md:hidden">
+      <div class="flex flex-col space-y-4 p-8 text-center">
+        <a href="#about" class="text-white text-xl hover:text-[var(--cta-color)] transition">About</a>
+        <a href="#social-presence-section" class="text-white text-xl hover:text-[var(--cta-color)] transition">Social</a>
+        <a href="#expertise" class="text-white text-xl hover:text-[var(--cta-color)] transition">Expertise</a>
+        <a href="#contact" class="text-white text-xl hover:text-[var(--cta-color)] transition">Contact</a>
+        <a href="https://wa.me/917976435064" target="_blank" class="py-2 px-6 brand-gradient-bg text-white font-bold rounded-lg shadow-md transition duration-300 mt-4">Consult Now</a>
+      </div>
+    </div>
+  </header>
+  <!-- End of Header and Navigation -->
+
+  <!-- Hero Section -->
+  <!-- Removed bg-[var(--bg-dark)] to show body background image -->
+  <div class="relative h-[800px] overflow-hidden text-white hero-section">
+    <!-- Semi-transparent overlay to ensure text legibility over background image -->
+    <div class="absolute inset-0 bg-black/50 z-20"></div>
+
+    <!-- This is the container for the profile image and button, which the user provided a snippet for -->
     <!-- Added mt-12 to shift the profile picture and button down 3 spaces (3rem/48px) -->
     <div class="absolute inset-0 flex flex-col items-center justify-start z-10 pt-48 md:pt-56 lg:pt-64 mt-12">
+      
+      <!-- Reconstructed Title and Qualifications Block -->
+      <div class="text-center mb-8">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-2">Advocate Manish Sharma</h1>
+        <p class="text-xl md:text-2xl font-medium text-[var(--text-secondary)]">BBA, LL B, LL.M</p>
+        <!-- Change 3: Clickable Phone Number Below Qualifications -->
+        <a href="tel:+917976435064" class="text-white hover:text-[var(--cta-color)] transition flex items-center justify-center mt-3 text-2xl font-bold p-2 rounded-lg bg-black/20 backdrop-blur-sm">
+            <span class="mr-3 text-[var(--cta-color)]">📞</span> +91 79764 35064
+        </a>
+      </div>
+      <!-- End Reconstructed Title and Phone Block -->
+
       <!-- Profile image classes: rounded-lg (rounded rectangle) remains unchanged -->
       <img src="manish%20sharma.jpg" alt="Manish Sharma Profile"
            class="w-48 h-48 md:w-64 md:h-64 object-cover border-8 border-white ring-8 ring-[var(--cta-color)] shadow-2xl transition duration-500 rounded-lg" />
@@ -171,16 +170,16 @@
     </div>
   </div>
   <main class="z-10 relative">
-    <section id="about" class="py-12 bg-[var(--card-bg)]">
+    <section id="about" class="py-12">
       <div class="max-w-7xl mx-auto px-4 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          <div class="md:col-span-1 reveal-item p-4 rounded-lg bg-[var(--card-bg)]">
+          <div class="md:col-span-1 reveal-item p-4 rounded-lg">
             <h2 class="text-2xl font-black mb-2 brand-gradient-text border-b border-gray-700 pb-1">About Me</h2>
             <p class="text-[var(--text-secondary)] leading-relaxed">
               Advocate Manish Sharma practices law in Rajsamand district, Rajasthan since 2009. He runs a YouTube channel for education and legal awareness, and has experience as a panel advocate and guest faculty. Specializes in litigation, civil, revenue and criminal law, with advisory services online and offline. Experienced in bank searches, property disputes, and judiciary preparatory classes.
             </p>
           </div>
-          <div class="md:col-span-1 reveal-item p-4 rounded-lg bg-[var(--card-bg)]">
+          <div class="md:col-span-1 reveal-item p-4 rounded-lg">
             <h3 class="text-xl font-semibold mb-2 brand-gradient-text border-b border-gray-700 pb-1">Profile</h3>
             <ul class="list-none pl-0 text-[var(--text-secondary)] space-y-2">
               <li class="flex items-center"><span class="mr-2 text-[var(--cta-color)]">📍</span> Location: Nathdwara, Rajsamand, Rajasthan</li>
@@ -189,7 +188,8 @@
               <li class="flex items-center"><span class="mr-2 text-[var(--cta-color)]">🎓</span> Online & Offline Classes for Judiciary Aspirants</li>
             </ul>
           </div>
-          <div class="md:col-span-1 reveal-item p-4 rounded-lg bg-[var(--card-bg)]">
+          <!-- Change 2: Added ID to Social Presence section for direct navigation -->
+          <div id="social-presence-section" class="md:col-span-1 reveal-item p-4 rounded-lg">
             <h3 class="text-xl font-semibold mb-2 brand-gradient-text border-b border-gray-700 pb-1">Social Presence</h3>
             <ul class="space-y-2 text-[var(--text-secondary)]">
               <li><a href="https://wa.me/917976435064" class="text-green-400 hover:text-green-300 transition flex items-center" target="_blank" rel="noopener"><span class="mr-2">💬</span> WhatsApp</a></li>
@@ -204,24 +204,24 @@
       </div>
     </section>
 
-    <section id="expertise" class="py-16 bg-[var(--bg-dark)]">
+    <section id="expertise" class="py-16">
       <div class="max-w-7xl mx-auto px-4 lg:px-8">
         <div class="text-center mb-12">
           <span class="text-[var(--cta-color)] uppercase text-sm font-semibold tracking-widest">CORE PRACTICE AREAS</span>
           <h2 class="text-3xl font-extrabold text-white mt-2">Focused Expertise for Complex Challenges</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <article class="premium-shadow bg-[var(--card-bg)] p-6 rounded-xl border-t-4 border-[var(--cta-color)] reveal-item" data-delay="0">
+          <article class="premium-shadow p-6 rounded-xl border-t-4 border-[var(--cta-color)] reveal-item" data-delay="0" style="background-color: var(--card-bg-overlay);">
             <div class="flex items-center justify-center h-12 w-12 rounded-full brand-gradient-bg text-white mb-4 font-bold text-xl">🏢</div>
             <h3 class="text-xl font-semibold mb-2 text-white">Corporate & Commercial Law</h3>
             <p class="text-[var(--text-secondary)]">Advising startups and firms on compliance, contract structuring, due diligence, and strategic governance.</p>
           </article>
-          <article class="premium-shadow bg-[var(--card-bg)] p-6 rounded-xl border-t-4 border-[var(--cta-color)] reveal-item" data-delay="200">
+          <article class="premium-shadow p-6 rounded-xl border-t-4 border-[var(--cta-color)] reveal-item" data-delay="200" style="background-color: var(--card-bg-overlay);">
             <div class="flex items-center justify-center h-12 w-12 rounded-full brand-gradient-bg text-white mb-4 font-bold text-xl">🏠</div>
             <h3 class="text-xl font-semibold mb-2 text-white">Real Estate & Property Law</h3>
             <p class="text-[var(--text-secondary)]">Handling title disputes, landlord/tenant matters, registration, and boundary resolutions.</p>
           </article>
-          <article class="premium-shadow bg-[var(--card-bg)] p-6 rounded-xl border-t-4 border-[var(--cta-color)] reveal-item" data-delay="400">
+          <article class="premium-shadow p-6 rounded-xl border-t-4 border-[var(--cta-color)] reveal-item" data-delay="400" style="background-color: var(--card-bg-overlay);">
             <div class="flex items-center justify-center h-12 w-12 rounded-full brand-gradient-bg text-white mb-4 font-bold text-xl">⚖️</div>
             <h3 class="text-xl font-semibold mb-2 text-white">Litigation & Dispute Resolution</h3>
             <p class="text-[var(--text-secondary)]">Court litigation, arbitration, and mediation with a client-first approach.</p>
@@ -230,7 +230,7 @@
       </div>
     </section>
 
-    <section id="contact" class="py-16 bg-[var(--card-bg)]">
+    <section id="contact" class="py-16">
       <div class="max-w-7xl mx-auto px-4 lg:px-8 text-center">
         <span class="text-[var(--cta-color)] uppercase text-sm font-semibold tracking-widest">INITIATE CONTACT</span>
         <h2 class="text-3xl font-extrabold text-white mt-2 mb-8">Get In Touch for Expert Advice</h2>
@@ -238,7 +238,7 @@
            class="inline-block py-3 px-8 brand-gradient-bg text-white font-bold rounded-lg shadow-md transition duration-300 premium-shadow text-lg">
           Send Direct Message
         </a>
-        <div class="mt-12 bg-[var(--bg-dark)] text-white rounded-xl p-8 premium-shadow space-y-6 max-w-3xl mx-auto border-t-4 border-[var(--cta-color)]">
+        <div class="mt-12 bg-[var(--bg-dark-overlay)] text-white rounded-xl p-8 premium-shadow space-y-6 max-w-3xl mx-auto border-t-4 border-[var(--cta-color)]">
           <h3 class="text-2xl font-bold text-[var(--cta-color)]">Direct Contact Information</h3>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
@@ -271,6 +271,10 @@
     const header = document.getElementById('main-header');
     const scrollThreshold = 200;
     const profileImgHeader = document.querySelector('.profile-img-header');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelectorAll('#mobile-menu a');
+
 
     /**
      * 1. Dynamic Sticky Header: Change style and size on scroll
@@ -278,10 +282,10 @@
     window.addEventListener('scroll', () => {
       if (window.scrollY > scrollThreshold) {
         header.classList.add('header-scrolled');
-        // Show the large image in the header (6rem x 6rem)
+        // Show the large image in the header (3rem x 3rem, adjusted for better fit)
         profileImgHeader.style.opacity = '1';
-        profileImgHeader.style.width = '6rem';
-        profileImgHeader.style.height = '6rem';
+        profileImgHeader.style.width = '3rem';
+        profileImgHeader.style.height = '3rem';
       } else {
         header.classList.remove('header-scrolled');
         // Hide the small image
@@ -292,7 +296,26 @@
     });
 
     /**
-     * 2. Scroll Reveal Animation for Expertise Cards
+     * 2. Mobile Menu Toggle
+     */
+    menuToggle.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('-translate-y-full');
+      if (isHidden) {
+        mobileMenu.classList.remove('-translate-y-full');
+      } else {
+        mobileMenu.classList.add('-translate-y-full');
+      }
+    });
+
+    // Close mobile menu when a link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('-translate-y-full');
+      });
+    });
+
+    /**
+     * 3. Scroll Reveal Animation for Expertise Cards
      */
     const revealItems = document.querySelectorAll('.reveal-item');
 
@@ -318,5 +341,6 @@
     });
   </script>
 </body>
+
 </html>
 
