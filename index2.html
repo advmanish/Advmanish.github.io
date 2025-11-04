@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Advocate Manish Sharma - Profile</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Background image from GitHub -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advocate Manish Sharma | Legal & Consultancy Services</title>
   <style>
     body {
       background-image: url('https://raw.githubusercontent.com/<your-username>/<your-repo>/main/background%20advmanish.jpg');
@@ -15,40 +13,41 @@
       background-position: center;
     }
   </style>
-  <!-- Add your other styles and links here -->
 </head>
-<body>
-  <div>
-    <header id="main-header">
-      <nav>
-        <!-- Navigation links -->
-        <a href="#about" class="nav-link ...">About</a>
-        <a href="#social-presence" class="nav-link ...">Social</a>
-        <a href="#expertise" class="nav-link ...">Expertise</a>
-        <a href="#contact" class="nav-link ...">Consult Now</a>
-      </nav>
-    </header>
+<body class="bg-gray-900 text-white relative overflow-x-hidden">
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <div class="flex items-center space-x-3">
+          <img src="manish%20sharma.jpg" alt="Manish Sharma Small" class="profile-img-header rounded-lg ring-4 ring-[var(--cta-color)] border-4 border-white shadow-xl transition-all duration-300" style="opacity:0;width:0;height:0;" />
+          <span class="text-xl font-extrabold">Advocate Manish Sharma</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-6">
+          <a href="#about" class="text-gray-300 hover:text-white transition">About</a>
+          <a href="#social-presence" class="text-gray-300 hover:text-white transition">Social</a>
+          <a href="#expertise" class="text-gray-300 hover:text-white transition">Expertise</a>
+          <a href="#contact" class="text-gray-300 hover:text-white transition">Consult Now</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div class="relative h-screen w-full">
     <div class="absolute inset-0 flex flex-col items-center justify-start z-10 pt-48 md:pt-56 lg:pt-64 mt-12">
-      <!-- Profile image classes: rounded-lg (rounded rectangle) remains unchanged -->
       <img src="manish%20sharma.jpg" alt="Manish Sharma Profile"
            class="w-48 h-48 md:w-64 md:h-64 object-cover border-8 border-white ring-8 ring-[var(--cta-color)] shadow-2xl transition duration-500 rounded-lg" />
-
-      <p class="mt-4 text-center text-xl font-semibold text-white">BBA, LL B, LL.M</p>
-      <p class="flex items-center justify-center mt-2 text-xl font-semibold">
+      <a href="AdvManishSharma.visitingcard.pdf" download="AdvManishSharma.visitingcard.pdf"
+         class="mt-8 inline-block w-4/5 md:w-1/2 py-3 px-4 brand-gradient-bg text-white font-extrabold text-2xl rounded-xl shadow-2xl transition duration-300 hover:scale-[1.01] transform premium-shadow">
+         Download My Digital Visiting Card
+      </a>
+      <p class="flex items-center justify-center mt-4 text-xl font-semibold">
         <span class="mr-2">📞</span>
         <a href="tel:+917976435064" class="text-[var(--cta-color)] hover:underline">+91 79764 35064</a>
       </p>
-
-      <a href="AdvManishSharma.visitingcard.pdf" download="AdvManishSharma.visitingcard.pdf"
-          class="mt-8 inline-block w-4/5 md:w-1/2 py-3 px-4 brand-gradient-bg text-white font-extrabold text-2xl rounded-xl shadow-2xl transition duration-300 hover:scale-[1.01] transform premium-shadow">
-          Download My Digital Visiting Card
-      </a>
     </div>
   </div>
   <main class="z-10 relative">
     <section id="about" class="py-12 bg-[var(--card-bg)]">
       <div class="max-w-7xl mx-auto px-4 lg:px-8">
-        <!-- About content ... unchanged -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           <div class="md:col-span-1 reveal-item p-4 rounded-lg bg-[var(--card-bg)]">
             <h2 class="text-2xl font-black mb-2 brand-gradient-text border-b border-gray-700 pb-1">About Me</h2>
@@ -79,9 +78,6 @@
         </div>
       </div>
     </section>
-    <section id="social-presence" class="py-12 bg-[var(--card-bg)]">
-      <!-- Repeat the Social Presence section below if required by layout (otherwise, keep only the one above) -->
-    </section>
     <section id="expertise" class="py-16 bg-[var(--bg-dark)]">
       <div class="max-w-7xl mx-auto px-4 lg:px-8">
         <div class="text-center mb-12">
@@ -107,13 +103,37 @@
         </div>
       </div>
     </section>
+    <section id="social-presence" class="py-12 bg-[var(--card-bg)]">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8">
+        <h2 class="text-2xl font-black mb-6 brand-gradient-text border-b border-gray-700 pb-1">Social Presence</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="md:col-span-1 p-4 rounded-lg bg-[var(--card-bg)]">
+            <ul class="space-y-2 text-[var(--text-secondary)]">
+              <li><a href="https://wa.me/917976435064" class="text-green-400 hover:text-green-300 transition flex items-center" target="_blank" rel="noopener"><span class="mr-2">💬</span> WhatsApp</a></li>
+              <li><a href="mailto:advmanish.rajasthan@gmail.com" class="text-red-400 hover:text-red-300 transition flex items-center" target="_blank" rel="noopener"><span class="mr-2">📧</span> Gmail</a></li>
+              <li><a href="https://www.youtube.com/@shrinathlawacademy" class="text-red-500 hover:text-red-400 transition flex items-center" target="_blank" rel="noopener"><span class="mr-2">▶️</span> YouTube Channel</a></li>
+            </ul>
+          </div>
+          <div class="md:col-span-1 p-4 rounded-lg bg-[var(--card-bg)]">
+            <ul class="space-y-2 text-[var(--text-secondary)]">
+              <li><a href="https://www.facebook.com/profile.php?id=100002438078917" class="text-blue-500 hover:text-blue-400 transition flex items-center" target="_blank" rel="noopener"><span class="mr-2">👍</span> Facebook</a></li>
+              <li><a href="https://www.linkedin.com/in/manish-sharma-74b663390" class="text-indigo-400 hover:text-indigo-300 transition flex items-center" target="_blank" rel="noopener"><span class="mr-2">🔗</span> LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/maddy.rajasthan?igsh=cW51ZTlxZmZyeTIw" class="text-pink-400 hover:text-pink-300 transition flex items-center" target="_blank" rel="noopener"><span class="mr-2">📸</span> Instagram</a></li>
+            </ul>
+          </div>
+          <div class="md:col-span-1 p-4 rounded-lg bg-[var(--card-bg)]">
+            <p class="text-[var(--text-secondary)]">Follow these channels for legal updates, case insights, and judiciary preparation tips.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="contact" class="py-16 bg-[var(--card-bg)]">
       <div class="max-w-7xl mx-auto px-4 lg:px-8 text-center">
         <span class="text-[var(--cta-color)] uppercase text-sm font-semibold tracking-widest">INITIATE CONTACT</span>
         <h2 class="text-3xl font-extrabold text-white mt-2 mb-8">Get In Touch for Expert Advice</h2>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLScagnVDJGuxHQy7FNhovcizveEdcVvPZz90m6kBPqQIjVTxFw/viewform?usp=publish-editor" target="_blank" rel="noopener"
            class="inline-block py-3 px-8 brand-gradient-bg text-white font-bold rounded-lg shadow-md transition duration-300 premium-shadow text-lg">
-          Send Direct Message
+           Send Direct Message
         </a>
         <div class="mt-12 bg-[var(--bg-dark)] text-white rounded-xl p-8 premium-shadow space-y-6 max-w-3xl mx-auto border-t-4 border-[var(--cta-color)]">
           <h3 class="text-2xl font-bold text-[var(--cta-color)]">Direct Contact Information</h3>
@@ -145,44 +165,34 @@
     const header = document.getElementById('main-header');
     const scrollThreshold = 200;
     const profileImgHeader = document.querySelector('.profile-img-header');
-    /**
-     * 1. Dynamic Sticky Header: Change style and size on scroll
-     */
     window.addEventListener('scroll', () => {
       if (window.scrollY > scrollThreshold) {
         header.classList.add('header-scrolled');
-        // Show the large image in the header (6rem x 6rem)
         profileImgHeader.style.opacity = '1';
         profileImgHeader.style.width = '6rem';
         profileImgHeader.style.height = '6rem';
       } else {
         header.classList.remove('header-scrolled');
-        // Hide the small image
         profileImgHeader.style.opacity = '0';
         profileImgHeader.style.width = '0';
         profileImgHeader.style.height = '0';
       }
     });
-    /**
-     * 2. Scroll Reveal Animation for Expertise Cards
-     */
     const revealItems = document.querySelectorAll('.reveal-item');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Find the delay from the data attribute, defaulting to 0
           const delay = parseInt(entry.target.getAttribute('data-delay') || '0', 10);
           setTimeout(() => {
             entry.target.classList.add('is-visible');
           }, delay);
-          observer.unobserve(entry.target); // Stop observing once visible
+          observer.unobserve(entry.target);
         }
       });
     }, {
       threshold: 0.3,
       rootMargin: '0px 0px -50px 0px'
     });
-    // Attach observer to all reveal items
     revealItems.forEach(item => {
       observer.observe(item);
     });
